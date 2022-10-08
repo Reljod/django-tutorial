@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}{{ nft.name }}{% endblock %}
+
+{% block body %}
+<section id="nft-details" class="nft-details">
+	<h1 class="nft-details__header">{{ nft.name }}</h1>
+	<div class="nft-detiails__details">
+		<p>Date created: <span id="created_at">{{ nft.created_at }}</span></p>
+		<p>Last update: <span id="updated_at">{{ nft.updated_at }}</span></p>
+	</div>
+</section>
+{% endblock %}
